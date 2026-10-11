@@ -1,0 +1,11 @@
+{
+  "objective": "Launch a small AI study-group knowledge assistant",
+  "tasks": [
+    {"id": "scope", "title": "Agree on user needs and success criteria", "effort_hours": 1.5, "priority": 5, "depends_on": []},
+    {"id": "collect", "title": "Collect and clean study notes", "effort_hours": 2, "priority": 4, "depends_on": ["scope"]},
+    {"id": "design", "title": "Choose retrieval and answer-citation approach", "effort_hours": 2.5, "priority": 5, "depends_on": ["scope"]},
+    {"id": "build", "title": "Implement the retrieval and answer flow", "effort_hours": 5, "priority": 5, "depends_on": ["collect", "design"]},
+    {"id": "evaluate", "title": "Test answers against representative questions", "effort_hours": 2, "priority": 4, "depends_on": ["build"]},
+    {"id": "document", "title": "Write setup instructions and demo notes", "effort_hours": 1, "priority": 3, "depends_on": ["evaluate"]}
+  ]
+}
